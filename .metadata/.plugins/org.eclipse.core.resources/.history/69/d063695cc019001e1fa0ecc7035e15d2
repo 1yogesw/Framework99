@@ -1,0 +1,28 @@
+package testcases;
+
+import java.io.IOException;
+import java.sql.Driver;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import Resources.BaseClass;
+import Resources.constants;
+import pageobjectmodel.loginpageObjects;
+
+
+public class LoginTestCase extends BaseClass {
+
+	@Test
+	public void verifyLogin() throws IOException {
+
+		
+		loginpageObjects lpo = new loginpageObjects(driver);
+
+		lpo.enterUsername().sendKeys(constants.username);
+		lpo.enterPassword().sendKeys(constants.password);
+		lpo.clickOnLogin().click();
+
+	}
+
+}

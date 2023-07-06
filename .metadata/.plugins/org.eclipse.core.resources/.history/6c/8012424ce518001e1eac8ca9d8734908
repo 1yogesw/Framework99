@@ -1,0 +1,41 @@
+package testcases;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import Resources.BaseClass;
+import pageobjectmodel.SignupPageObjects;
+import pageobjectmodel.loginpageObjects;
+
+public class SignupTestCases extends BaseClass {
+
+	@Test
+	public void verifySignup() throws IOException, InterruptedException {
+
+		initializeDriver();
+		driver.get("https://login.salesforce.com/");
+
+		loginpageObjects lpo = new loginpageObjects(driver);
+		lpo.clickOntryForFree().click();
+
+		SignupPageObjects spo = new SignupPageObjects(driver);
+
+		Thread.sleep(5000);
+		spo.enterFirstName().sendKeys("test");
+
+		spo.enterLastName().sendKeys("secure123");
+
+		spo.enterJobTitle().sendKeys("hhjs");
+
+		spo.clickOnNextButton().click();
+
+		WebElement a = spo.selectEmployees();
+		Select s = new Select(a);
+		s.selectByIndex(2);
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package javabasics;
+
+public class datatypes {
+	
+	//Datatype-- how we can store our data and which format-
+	 //Primitive - aleredy defined-- byte, short ,char,int, long, float,double,boolean
+	 //Non-Primitive datatype --user defined-- String ,arrays 
+	
+	public static void main(String[] args) {
+		//syntax for storing any value-
+		//datatype variablename=value;
+		
+		byte a=127;
+				System.out.println(a);
+				
+				short b=6800;
+				System.out.println(b);
+				
+				int c=567;
+				System.out.println(c);
+				//long
+				//float
+				//double
+				
+				boolean d=true;
+				System.out.println(d);
+				
+				char k='p';
+				System.out.prinyln(k);
+				
+	}
+}
+						
+	
+
+

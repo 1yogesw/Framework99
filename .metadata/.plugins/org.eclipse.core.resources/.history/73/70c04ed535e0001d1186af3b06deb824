@@ -1,0 +1,24 @@
+package ProgramsPractise;
+
+public class reverseString {
+
+
+	public static void main(String[] args) {
+		
+		//max index==length-1
+		
+	String s="Rahul";
+		
+		//s.length=5
+		
+		String temp="";
+		
+		for(int i=s.length()-1;i>=0;i--) {
+			
+			
+		  		  }
+		  System.out.println(temp);
+		  
+		  
+	}
+}

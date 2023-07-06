@@ -1,0 +1,10 @@
+package Resources;
+
+public class constants {
+	public static String username="rahul";
+	 public static String password="secure123";
+	 public static String firstName="rajesh";
+	 public static String lastName="test";
+	 public static String jobTitle="temp";
+
+}

@@ -1,0 +1,17 @@
+package pageobjectmodel;
+
+import org.openqa.selenium.By;
+
+public class loginpageobject {
+	private By username=By.xpath("//input[@id='username']");
+	private By password=By.xpath("//input[@id=' password']");
+	private By login=By.xpath("//input[@id='login']");
+	public void enterusername() {
+	
+		return driver.findElement(username);
+	}
+	
+	
+	
+	
+}
